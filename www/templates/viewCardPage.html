@@ -1,0 +1,41 @@
+<ion-view style="" id="page2" title="View Card Page(首页)">
+    <ion-content class="has-header" padding="true" >
+        <ion-list class="manual-list-fullwidth" >
+            <p>{{card.title}}</p>
+            <div class="item item-avatar">
+                <img src="http://www.runoob.com/try/demo_source/mcfly.jpg">
+                <h2>{{card.name}}</h2>
+                <p>{{card.editDate}}</p>
+            </div>
+
+            <div class="item item-body">
+
+                <p>{{card.body}}</p>
+                <img class="full-image" style="height:20%; width:100%" src="http://www.runoob.com/try/demo_source/delorean.jpg">
+                <p>
+                    <a href="#" class="subdued">{{card.likeNum}} 喜欢</a>
+                    <a href="#" class="subdued">{{card.commentNum}} 评论</a>
+                </p>
+            </div>
+
+            <div class="item item-avatar" ng-repeat="comment in comments">
+                <img src="http://www.runoob.com/try/demo_source/mcfly.jpg">
+                <h2>{{comment.name}}</h2>
+                <h4>{{comment.data()}}</h4>
+                <p>{{comment.body}}</p>
+            </div>
+
+        </ion-list>
+    </ion-content>
+    <div class=" bar bar-footer item-input-inset ">
+        <label class=" item-input-wrapper ">
+            <i class="icon ion-edit placeholder-icon"></i>
+            <input type="search" placeholder="评论">
+        </label>
+         <div style="font-size:22px;padding-left:15px">
+            <i style="padding:0px 10px" class="icon ion-ios-heart-outline placeholder-icon"></i>
+            <i style="padding:0px 10px" class="icon ion-ios-chatboxes-outline placeholder-icon"></i>
+            <i style="padding:0px 10px" class="icon ion-ios-upload-outline placeholder-icon"></i>
+        </div>
+    </div>
+</ion-view>

@@ -1,0 +1,16 @@
+<ion-view style="" id="page5" title="Verify Mailbox Page" >
+  <ion-content class="has-header" padding="true" >
+    <ion-list class="manual-list-fullwidth" id="verifyMailboxPage-list2">
+      <label id="verifyMailboxPage-input6" class="item item-input">
+        <span class="input-label">邮箱</span>
+        <input placeholder="请输入校内邮箱地址" type="email" ng-model="$parent.email">
+      </label>
+      <label id="verifyMailboxPage-input9" class="item item-input">
+        <span class="input-label">验证码</span>
+        <input placeholder="请输入邮件中的验证码" type="text" ng-model="$parent.emailCode">
+      </label>
+    </ion-list>
+    <button class="button button-positive  button-block button-outline" id="verifyMailboxPage-button1" ng-disabled="isSendCode" ng-click="sendCode()">{{sendCodeBtnText}}</button>
+    <button class="button button-positive  button-block" id="verifyMailboxPage-button2" ng-click="verifyMailbox()">确认</button>
+  </ion-content>
+</ion-view>

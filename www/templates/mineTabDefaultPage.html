@@ -1,0 +1,19 @@
+<ion-view style="" id="page4" title="Mine Tab Default Page(我的)">
+  <ion-content class="has-header" padding="true"  >
+    <ion-list class="manual-list-fullwidth" id="mineTabDefaultPage-list2" >
+      <ion-item style="" id="mineTabDefaultPage-list-item2" class="item-avatar item-icon-right" ng-click="infoClick()">
+        <img src="img/4K3hiNwBQMySZPBbd94L_tmpdir__16_11_7_11_26_57.gif">
+        <h2 >{{user.phonenumber}}</h2>
+        <p></p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+      <ion-item style="" id="mineTabDefaultPage-list-item3" class="item-avatar item-icon-right" ui-sref="verifyMailboxPage">
+        <h2 >验证邮箱</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+    <div style="width: 283px; height: 35px;" class="spacer"></div>
+
+    <button class="button button-positive  button-block" id="mineTabDefaultPage-button3"  ng-show="isLogin" ng-click="signout()">退出登录</button>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,22 @@
+<ion-view style="" id="page2" title="Edit Card Page(发布帖子)" >
+        <ion-nav-buttons class="has-header" side="right">
+            <button class="button button-icon icon No Icon" ui-sref="editCardPage" ng-click="publish()">发布</button>
+        </ion-nav-buttons>
+        <ion-content class="has-header" padding="true">
+            <ion-list class="manual-list-fullwidth">
+                <label class="item item-input">
+                    <input type="text" placeholder="标题" ng-model="$parent.title">
+                </label>
+                <label class="item item-input">
+                    <textarea placeholder="内容" ng-model="$parent.body"></textarea>
+                </label>
+            </ion-list>
+
+        </ion-content>
+        <div class=" bar bar-footer ">
+                <button class="button button-small button-positive  button-clear icon ion-ios-camera-outline" id="editCardPage-button27"></button>
+                <button class="button button-small button-positive  button-clear icon ion-happy-outline" id="editCardPage-button28"></button>
+                <button class="button button-small button-positive  button-clear icon ion-ios-mic-outline" id="editCardPage-button29"></button>
+        </div>
+
+</ion-view>
